@@ -1,0 +1,23 @@
+h2{
+  color:#202c45 !important;
+}
+#who{
+  margin-top:5px;
+  padding-left:20px;
+  font-size:1rem;
+  color: #373c48;
+}
+#who li{
+  
+  list-style-type: disc;
+  list-style-position: outside; 
+}
+
+.row{
+  padding:5px;
+}
+
+.container{
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+}

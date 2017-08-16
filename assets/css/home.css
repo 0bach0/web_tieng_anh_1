@@ -1,0 +1,37 @@
+#who li{
+  list-style-type: disc;
+  list-style-position: outside; 
+}
+
+.home-image-teacher{
+  background: #e4602f;
+  padding:5px;
+  color:white;
+}
+
+.avatar-teacher{
+  overflow: hidden;
+  height: 200px;
+}
+
+.avatar-teacher > img{
+  /* margin: calc(200px - 100%) auto; */
+}
+
+.description-color{
+  color: #101622;
+}
+
+.description-color li {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.funfact .fa{
+  margin-bottom:10px;
+  color:#ef4b30;
+}
+
+.funfact .text-white{
+  font-weight: bold;
+}
