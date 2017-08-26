@@ -66,6 +66,7 @@
                         echo '<td>';
    
 echo '<button class="btn btn-default col-md-12 col-xs-12 col-sm-12" style="background-color: #e4602f;" data-toggle="modal" data-target="#myModal-'.$schedule->id.'">Đăng ký</button>';
+
 echo '<div id="myModal-'.$schedule->id.'" class="modal fade" role="dialog">';
 echo '  <div class="modal-dialog">';
 echo '    <div class="modal-content">';
@@ -75,7 +76,7 @@ echo '        <h4 class="modal-title">Đăng ký lớp '.$schedule_list->title.'
 echo '      </div>';
 echo '      <div class="modal-body">';
 
-echo '<form id="contact_form" name="contact_form" class="" action="'.base_url() .'register/submit" method="post">';
+echo '<form id="contact_form" name="contact_form" class="contact_form" action="'.base_url() .'register/submit" method="post">';
 echo '  <div class="row">';
 echo '    <div class="col-sm-12">';
 echo '      <div class="form-group">';

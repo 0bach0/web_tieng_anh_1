@@ -7,6 +7,24 @@ $("#contact_form").submit(function(e){
   $("#doneModal").modal();
 });
 
+var x = $('.contact_form');
+for (var key in x) {
+  if (x.hasOwnProperty(key)) {
+    if(x[key].tagName==='FORM'){
+      x[key].onsubmit = function(e){
+        e.preventDefault();
+        console.log(e.target,typeof(e.target));
+        var form_data = e.target.elements;
+        // var form_data = form.serializeArray();
+        for (i = 0; i < form_data.length ; i++) {
+          localStorage.setItem(form_data[i].name, form_data[i].value);
+        }
+        $("#doneModal").modal();
+      };
+    }
+  }
+}
+
 $('#doneModal').on('hidden.bs.modal', function () {
 
   var form_btn = $("#contact_form").find('button[type="submit"]');
