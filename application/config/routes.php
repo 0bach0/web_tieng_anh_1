@@ -66,8 +66,12 @@ $route['tin-tuc/(:any)'] = 'news/detail/$1';
 
 $route['gioi-thieu'] = 'page/view/gioi-thieu';
 
+$route['kiem-tra'] = 'exam/index';
+$route['kiem-tra/(:any)'] = 'exam/index/$1';
+
 $route['quan-ly'] = 'admin/index';
 $route['quan-ly/(:any)'] = 'admin/index/$1';
+$route['quan-ly/(:any)/(:any)'] = 'admin/index/$1/$2';
 
 $route['dang-nhap'] = 'login/index';
 $route['dang-xuat'] = 'routesecure/logout';

@@ -23,11 +23,17 @@ function url(){
 }
 
 function change_data($postdata, $xcrud){
-  $postdata->set('slug', to_slug($postdata->get('title').'-'.time()));
+  $tmp = to_slug($postdata->get('title'));
+  $tmp = $tmp.'-'.strval(time());
+  $postdata->set('slug', $tmp);
 }
 
 function change_url_image($postdata, $xcrud){
   $postdata->set('url',  url().'/assets/images/upload/'.$postdata->get('name'));
+}
+
+function change_url_file($postdata, $xcrud){
+  $postdata->set('url',  url().'/assets/file/upload/'.$postdata->get('name'));
 }
 
 function change_password($postdata, $xcrud){

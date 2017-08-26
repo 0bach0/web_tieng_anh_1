@@ -80,8 +80,13 @@
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <input name="form_course" class="form-control" type="text"
-                              placeholder="Ghi chú">
+                              <select name="form_course" class="form-control">
+                                <?php 
+                                  foreach($this->data['curriculum-list'] as $curriculum){
+                                    echo '<option value="'.$curriculum->id.'">'.$curriculum->title.'</option>';
+                                  }
+                                ?>
+                              </select>
                         </div>
                      </div>
                   </div>
@@ -104,3 +109,23 @@
    </section>
 </div>
 <!-- End Main Content -->
+
+<div class="modal fade" id="doneModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Lưu ý!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn có muốn làm bài kiểm tra trình độ luôn không?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="test_page" class="btn btn-default">Làm test trình độ.</button>
+        </div>
+      </div>
+      
+    </div>
+</div>

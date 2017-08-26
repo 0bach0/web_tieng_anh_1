@@ -1,7 +1,7 @@
 $("#contact_form").submit(function(e){
   e.preventDefault();
   var form_data = $('#contact_form').serializeArray();
-  for (i = 0; i < 4; i++) { 
+  for (i = 0; i < form_data.length ; i++) { 
       localStorage.setItem(form_data[i].name, form_data[i].value);
   }
   $("#doneModal").modal();
@@ -34,12 +34,12 @@ $('#doneModal').on('hidden.bs.modal', function () {
   var option = {success:done,error:error};
 
   $('#contact_form').ajaxSubmit(option); 
-  console.log('closed');
 });
 
 $("#test_page").click(function(){
-  
-  location.href='/kiem-tra';
+  var link = '/kiem-tra/'+localStorage.getItem('form_course');
+  //console.log(link);
+  location.href= link;
 });
 
 

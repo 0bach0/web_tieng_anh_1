@@ -1,0 +1,53 @@
+body{
+	text-align: center;
+	/* background: #00ECB9; */
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 1; 
+
+}
+
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+  border-radius: 3px;
+  background: #fff;
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+  font-size: 30px;
+  
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #b7512b;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #e4602f;
+	display: inline-block;
+}
+
+#sheet{
+  padding: 20px;
+  text-align: left;
+}
+
+.answer-list{
+  margin-bottom:20px;
+}

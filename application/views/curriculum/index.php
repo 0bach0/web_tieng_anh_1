@@ -7,11 +7,11 @@
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title text-white"><?php echo $this->data['curriculum']->name; ?></h2>
+                    <h2 class="title text-white"><?php echo $this->data['curriculum']->title; ?></h2>
                     <ol class="breadcrumb text-left text-white mt-10">
                         <li><a href="/" class="text-white">Trang chủ</a></li>
                         <li><a href="/khoa-hoc" class="text-white">Khóa học</a></li>
-                        <li class="active text-gray-silver"><?php echo $this->data['curriculum']->name; ?></li>
+                        <li class="active text-gray-silver"><?php echo $this->data['curriculum']->title; ?></li>
                     </ol>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <div class="col-sm-12 col-md-3">
                <div class="sidebar sidebar-left mt-sm-30 entry-content mt-10">
                   <h3 class="line-bottom mt-0 mb-20">Đăng ký khóa học</h3>
-                  <p class="mb-20">Nhập thông tin cá nhân để đăng ký khóa học <?php echo $this->data['curriculum']->name?>.</p>
+                  <p class="mb-20">Nhập thông tin cá nhân để đăng ký khóa học <?php echo $this->data['curriculum']->title?>.</p>
                   <!-- Contact Form -->
                   <form id="contact_form" name="contact_form" class="" action="<?php echo base_url();?>register/submit" method="post">
                      <div class="row">
@@ -110,7 +110,7 @@
                         <div class="col-sm-12" style="display:none" >
                            <div class="form-group">
                               <input name="form_course" class="form-control" type="text"
-                                 value="<?php echo $this->data['curriculum']->name?>" placeholder="Khóa học cần tư vấn">
+                                 value="<?php echo $this->data['curriculum']->id?>" placeholder="Khóa học cần tư vấn">
                            </div>
                         </div>
                      </div>
@@ -133,3 +133,24 @@
          </div>
       </div>
    </section>
+
+
+<div class="modal fade" id="doneModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Lưu ý!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn có muốn làm bài kiểm tra trình độ luôn không?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="test_page" class="btn btn-default">Làm test trình độ.</button>
+        </div>
+      </div>
+      
+    </div>
+</div>

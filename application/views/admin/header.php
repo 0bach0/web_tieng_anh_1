@@ -40,6 +40,8 @@
       <link media="all" type="text/css" rel="stylesheet" href="<?php echo asset_url()?>css/loading-btn.css">
       <link media="all" type="text/css" rel="stylesheet" href="<?php echo asset_url()?>css/home.css">
       <link media="all" type="text/css" rel="stylesheet" href="<?php echo asset_url()?>css/bootstrap.min.css">
+      <script type="text/javascript" src="<?php echo asset_url()?>js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="<?php echo asset_url()?>js/jquery-ui.min.js"></script>
   </head>
 
 <body>
@@ -63,7 +65,7 @@
             <li class="<?php if($this->uri->segment(2) === 'review') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/review">Cảm nhận học viên</a></li>
             <li class="<?php if($this->uri->segment(2) === 'teacher') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/teacher">Giáo viên</a></li>
             <li class="<?php if($this->uri->segment(2) === 'schedule') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/schedule">Lịch khai giảng</a></li>
-            <li class="<?php if($this->uri->segment(2) === 'image') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/image">Tải ảnh</a></li>
+            <li class="<?php if($this->uri->segment(2) === 'upload') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/upload">Upload</a></li>
             <?php 
               if($_SESSION['is_root']==='1'){
                 $tmp = " <li ";

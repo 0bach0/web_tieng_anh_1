@@ -25,7 +25,7 @@ class Curriculum extends CI_Controller {
       if ($curriculum->slug === $slug)
         $this->data['curriculum'] = $curriculum;
       
-      $this->data['title'] = $this->data['curriculum']->name;
+      $this->data['title'] = $this->data['curriculum']->title;
 
       $this->load->view('templates/header', $this->data);
       $this->load->view('curriculum/index', $this->data);

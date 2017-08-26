@@ -13,7 +13,7 @@ class Document_model extends CI_Model {
       }
       else 
         $query = $this->db->select('title, image, short_description, slug,time')->limit($limit, $from)->get_where('post', array('type' => 'document','sub_type' => $sub_type));
-            return $query->result();
+        return $query->result();
     }
 
     public function get_by_slug($sub_type,$slug)

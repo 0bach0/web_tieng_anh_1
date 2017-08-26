@@ -38,7 +38,7 @@ class Xcrud_config
     // scripts
     public static $load_bootstrap = true; // turn on, if you want to load bootstrap via xCRUD
     public static $load_googlemap = false; // loads google map api for 'POINT' type. Turn off, if your site already uses it.
-    public static $load_jquery = true; // loads jQuery, turn it off if you already have jQuery on your page. jQuery version must be at least 1.7. If your jQuery loads in the bottom of page, you must activate $manual_load and use  Xcrud::load_css() & Xcrud::load_js() on your page.
+    public static $load_jquery = false; // loads jQuery, turn it off if you already have jQuery on your page. jQuery version must be at least 1.7. If your jQuery loads in the bottom of page, you must activate $manual_load and use  Xcrud::load_css() & Xcrud::load_js() on your page.
     public static $load_jquery_ui = true; // jQueryUI, turn it on if you already have jQueryUI on your page (datepicker and slider widgets are mandatory).
     public static $load_jcrop = true; // disable, if your page already uses jCrop
     public static $jquery_no_conflict = true; // Includes jQuery.noConflict(). Use according to jQuery documentation.
@@ -182,8 +182,9 @@ class Xcrud_config
     
     
     // anti XSS
-    public static $auto_xss_filtering = true; // enable all xcrud's POST and GET data filtering
-    public static $xss_disalowed_attibutes = array('on\w*', 'style', 'xmlns', 'formaction'); // Remove bad attributes such as style, onclick and xmlns
+    public static $auto_xss_filtering = false; // enable all xcrud's POST and GET data filtering
+    //public static $xss_disalowed_attibutes = array('on\w*', 'style', 'xmlns', 'formaction'); // Remove bad attributes such as style, onclick and xmlns
+    public static $xss_disalowed_attibutes = array('xmlns', 'formaction'); // Remove bad attributes such as style, onclick and xmlns
     public static $xss_naughty_html = 'alert|applet|audio|basefont|base|behavior|bgsound|blink|body|embed|expression|form|frameset|frame|head|html|ilayer|iframe|input|isindex|layer|link|meta|object|plaintext|style|script|textarea|title|video|xml|xss'; // If a tag containing any of the words in the list below is found, the tag gets converted to entities.
     public static $xss_naughty_scripts = 'alert|cmd|passthru|eval|exec|expression|system|fopen|fsockopen|file|file_get_contents|readfile|unlink'; // imilar to above, only instead of looking for tags it looks for PHP and JavaScript commands that are disallowed.  Rather than removing the code, it simply converts the parenthesis to entities rendering the code un-executable.
     

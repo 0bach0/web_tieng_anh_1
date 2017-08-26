@@ -46,15 +46,24 @@
                         </div>
                      </div>
                      <div class="col-sm-12">
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                            <input name="form_course" class="form-control" type="text"
                               placeholder="Ghi chú">
+                        </div> -->
+                        <div class="form-group">
+                          <select name="form_course" class="form-control">
+                            <?php 
+                              foreach($this->data['curriculum-list'] as $curriculum){
+                                echo '<option value="'.$curriculum->id.'">'.$curriculum->title.'</option>';
+                              }
+                            ?>
+                          </select>
                         </div>
                      </div>
                   </div>
                   <div class="form-group">
                      <input name="form_botcheck" class="form-control" type="hidden" value=""/>
-                     <button type="submit"
+                     <button type="submit" id="submit-button" 
                         class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px"
                         data-loading-text="Xin chờ giây lát...">Đăng ký
                      </button>
@@ -104,7 +113,7 @@
                           echo '  <div class="service-block bg-white">';
                           // echo '  <div class="thumb"> <img alt="featured project" src="'.'" class="img-fullwidth"> </div>';
                           echo '<div class="content text-left flip p-25 pt-0">';
-                          echo '<h4 class="line-bottom mb-10">'.$curriculum->name.'</h4>';
+                          echo '<h4 class="line-bottom mb-10">'.$curriculum->title.'</h4>';
                           echo '<div id="who">'.$curriculum->short_description.'</div>';
                           echo '<a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="khoa-hoc/'.$curriculum->slug.'">Chi tiết</a>';
                           echo '</div></div></div>';
@@ -148,7 +157,7 @@
                                 if($count % 2 == 1) {echo '<tr class="info">';}
                                 else echo '<tr class="">';
                                 $count++;
-                                echo '<td>'.$schedule->name.'</td>';
+                                echo '<td>'.$schedule->title.'</td>';
                                 echo '<td>'.$schedule->class_name.'</td>';
                                 echo '<td>'.$schedule->schedule.'</td>';
                                 echo '<td><b class="theme-text-color-red">'.$schedule->start_day.'</b></td>';
@@ -334,3 +343,25 @@
 </section>
 </div>
 <!-- End Main Content -->
+
+
+<!-- Section: Modal -->
+<div class="modal fade" id="doneModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Lưu ý!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn có muốn làm bài kiểm tra trình độ luôn không?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="test_page" class="btn btn-default">Làm test trình độ.</button>
+        </div>
+      </div>
+      
+    </div>
+</div>

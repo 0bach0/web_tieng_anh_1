@@ -141,7 +141,7 @@
                               <ul class="dropdown" style="right: auto;">
                                 <?php 
                                   foreach($this->data['curriculum-list'] as $curriculum){
-                                    echo '<li><a href="'.base_url().'khoa-hoc/'.$curriculum->slug.'">'.$curriculum->name.'</a></li>';
+                                    echo '<li><a href="'.base_url().'khoa-hoc/'.$curriculum->slug.'">'.$curriculum->title.'</a></li>';
                                   }
                                 ?>
                               </ul>

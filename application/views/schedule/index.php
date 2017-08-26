@@ -31,7 +31,7 @@
                       {
                         echo '<li class="';
                         if($count==0) echo 'active';
-                        echo '"><a href="#'.$schedule->id.'" data-toggle="tab">'.$schedule->name.'</a> </li>';
+                        echo '"><a href="#'.$schedule->id.'" data-toggle="tab">'.$schedule->title.'</a> </li>';
                         $count++;
                       }
                     ?>
@@ -71,7 +71,7 @@ echo '  <div class="modal-dialog">';
 echo '    <div class="modal-content">';
 echo '      <div class="modal-header">';
 echo '        <button type="button" class="close" data-dismiss="modal">&times;</button>';
-echo '        <h4 class="modal-title">Đăng ký lớp '.$schedule_list->name.' '.$schedule->class_name.'</h4>';
+echo '        <h4 class="modal-title">Đăng ký lớp '.$schedule_list->title.' '.$schedule->class_name.'</h4>';
 echo '      </div>';
 echo '      <div class="modal-body">';
 
@@ -98,9 +98,15 @@ echo '    </div>';
 
 echo '    <div class="col-sm-12">';
 echo '      <div class="form-group">';
-echo '        <input name="form_course" class="form-control hidden" type="text" value="'.$schedule_list->name.' '.$schedule->class_name.'"';
+echo '        <input name="form_course" class="form-control hidden" type="text" value="'.$schedule->curriculum_id.'"';
 echo '       </div>';
 echo '    </div>';
+echo '    <div class="col-sm-12">';
+echo '      <div class="form-group">';
+echo '        <input name="form_class_id" class="form-control hidden" type="text" value="'.$schedule->id.'"';
+echo '       </div>';
+echo '    </div>';
+
 echo '  </div>';
                      
 echo '  <div class="form-group modal-footer">';
@@ -140,3 +146,24 @@ echo '</div>';
    </section>
 </div>
 <!-- End Main Content -->
+
+
+<div class="modal fade" id="doneModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Lưu ý!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn có muốn làm bài kiểm tra trình độ luôn không?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="test_page" class="btn btn-default">Làm test trình độ.</button>
+        </div>
+      </div>
+      
+    </div>
+</div>
