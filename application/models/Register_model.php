@@ -12,7 +12,7 @@ class Register_model extends CI_Model {
             'name' => $name,
             'phone' => $phone,
             'email' => $email,
-            'course' => $course,
+            'curriculum_id' => $course,
             'answer' => $answer,
             'class_id' => $class
       );

@@ -37,16 +37,16 @@
   if(isset($this->data['table'])){
     echo $this->data['table'];
   }
-  if(isset($this->data['curriculum_list']) && ($this->data['slug']!='question')){
-    echo '<h2>List các khóa học</h1>';
-    echo '<table class="table table-hover">    <thead>      <tr>        <th>Id</th>        <th>Curriculum name</th>      </tr>    </thead>    <tbody>';
+  // if(isset($this->data['curriculum_list']) && ($this->data['slug']!='question')){
+  //   echo '<h2>List các khóa học</h1>';
+  //   echo '<table class="table table-hover">    <thead>      <tr>        <th>Id</th>        <th>Curriculum name</th>      </tr>    </thead>    <tbody>';
       
-    foreach($this->data['curriculum_list'] as $curriculum){
-      foreach($curriculum as $key => $value)
-        echo '<tr> <td>'.$key.'</td><td>'.$value.'</td></tr>';
-    }
-    echo '</tbody>  </table>';
-  }
+  //   foreach($this->data['curriculum_list'] as $curriculum){
+  //     foreach($curriculum as $key => $value)
+  //       echo '<tr> <td>'.$key.'</td><td>'.$value.'</td></tr>';
+  //   }
+  //   echo '</tbody>  </table>';
+  // }
 
   ?>
 

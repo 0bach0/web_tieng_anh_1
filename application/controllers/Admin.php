@@ -31,6 +31,8 @@ class Admin extends Routesecure {
       }
             
       $xcrud = Xcrud::get_instance();
+
+
       $this->data['slug'] = $slug;
       $this->data['slug2'] = $slug2;
 
@@ -53,11 +55,13 @@ class Admin extends Routesecure {
       if(in_array($slug,array('curriculum','post'))) 
       {
         $xcrud->before_insert('change_data','insert_support.php');
-        $xcrud->columns('slug', true);
-        $xcrud->fields('slug', true);
+        $xcrud->columns('slug, test_time', true);
+        $xcrud->fields('slug, test_time', true);
       }
       if(in_array($slug,array('schedule','question'))) 
       {
+        $xcrud->relation('curriculum_id','curriculum','id','title');
+
         $this->load->model('curriculum_model');
         $result = $this->curriculum_model->get_curriculum_list();
         $nameCurriculum =array();
@@ -71,6 +75,8 @@ class Admin extends Routesecure {
       if(in_array($slug,array('register')))
       {
         $xcrud->readonly('name,phone,email,course,class_id,answer,register_time');
+        $xcrud->relation('curriculum_id','curriculum','id','title');
+        $xcrud->relation('class_id','schedule','id','class_name');
         $xcrud->no_editor('answer');
         
       }
@@ -92,6 +98,7 @@ class Admin extends Routesecure {
         $xcrud->before_insert('change_password','insert_support.php');
       }
 
+      $xcrud->label(array('curriculum_id' => 'Khóa học','class_name' => 'Mã lớp','class_id'=>'Mã lớp','short_description'=>'Mô tả ngắn gọn','full_description'=>'Nội dung','done'=>'Xử lý','show_item'=>'Hiển thị trang chủ','description'=>'Nội dung','student_name'=>'Tên học sinh','teacher_name'=>'Tên giáo viên','schedule'=>'Lịch học','start_day'=>'Ngày khai giảng','fee'=>'Học phí','other_benefit'=>'Các lợi ích khác'));
       if(in_array($slug,array('question'))) {
         $xcrud->fields('content, answer_size');
         $xcrud->columns('content, answer_size');

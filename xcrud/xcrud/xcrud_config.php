@@ -108,7 +108,7 @@ class Xcrud_config
     // alert settings
     public static $email_from = 'mailer@example.com'; // email from address
     public static $email_from_name = 'xCRUD Data Management System'; // email from name
-    public static $email_enable_html = true; // enables html in email letters
+    public static $email_enable_html = false; // enables html in email letters
 
     
     // remote request options (call_page() methods)

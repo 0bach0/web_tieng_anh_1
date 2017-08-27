@@ -66,6 +66,7 @@
             <li class="<?php if($this->uri->segment(2) === 'teacher') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/teacher">Giáo viên</a></li>
             <li class="<?php if($this->uri->segment(2) === 'schedule') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/schedule">Lịch khai giảng</a></li>
             <li class="<?php if($this->uri->segment(2) === 'upload') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/upload">Upload</a></li>
+            <li class="<?php if($this->uri->segment(2) === 'question') echo 'active';?>"><a href="<?php echo base_url();?>quan-ly/question">Soạn đề</a></li>
             <?php 
               if($_SESSION['is_root']==='1'){
                 $tmp = " <li ";

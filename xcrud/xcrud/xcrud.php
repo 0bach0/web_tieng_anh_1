@@ -272,7 +272,6 @@ class Xcrud
     }
     public static function get_requested_instance()
     {
-      
         if (isset($_POST['xcrud']['instance']) && isset($_POST['xcrud']['key']) && isset($_POST['xcrud']['task']))
         {
             self::init_prepare('post');
@@ -2525,7 +2524,6 @@ class Xcrud
     /** main update constructor */
     protected function _update($postdata, $primary)
     {
-        //var_dump(htmlentities($postdata["post.full_description"]));
         if (!$postdata)
         {
             self::error('$postdata array is empty');
@@ -2819,10 +2817,6 @@ class Xcrud
     protected function _save()
     {
         $postdata = $this->_post('postdata');
-        // if(isset($postdata['post.full_description']))
-        //   $postdata['post.full_description'] = str_replace("&lt;","<",str_replace("&gt;",">",$postdata['post.full_description']));
-        // var_dump($postdata['post.full_description']);
-        
         if (!$postdata)
         {
             self::error('No data to save!');
