@@ -12,7 +12,7 @@
                            <li class="m-0 pl-10 pr-10"><i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="" style="color:white;" href="<?php echo base_url()?>"  style="color:white;">http://google.com.vn</a></li>
                         </ul>
                      </div>
-                     <div class="widget dark">
+                     <!-- <div class="widget dark">
                         <h4 class="widget-title line-bottom-theme-colored-2">Mở cửa</h4>
                         <div class="opening-hours">
                            <ul class="list-border">
@@ -22,7 +22,7 @@
                               </li>
                            </ul>
                         </div>
-                     </div>
+                     </div> -->
                   </div>
                   <div class="col-sm-6 col-md-4">
                      <div class="widget dark">

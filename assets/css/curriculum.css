@@ -7,8 +7,10 @@ h2{
   font-size:1rem;
   color: #373c48;
 }
+#who ul{
+  padding:0px;
+}
 #who li{
-  
   list-style-type: disc;
   list-style-position: outside; 
 }
@@ -20,4 +22,21 @@ h2{
 .container{
   padding-top:0px !important;
   padding-bottom:0px !important;
+}
+
+ol,ul,dl
+{
+  /* IE7: reset rtl list margin. (#7334) */
+  list-style: inside;
+  margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+.entry-content{
+  color:black;
+}
+
+.entry-content > h1, h2, h3, h4, h5, strong{
+  color: black;
 }

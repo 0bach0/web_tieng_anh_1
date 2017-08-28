@@ -15,7 +15,7 @@ class Xcrud_config
     
     
     // database advanced
-    public static $dbencoding = 'utf8'; // Your database encoding, default is 'utf8'. Do not change, if not sure.
+    public static $dbencoding = 'utf8mb4'; // Your database encoding, default is 'utf8'. Do not change, if not sure.
     public static $db_time_zone = ''; // database time zone, if you want use system default - leave empty.
     public static $mbencoding = 'utf-8'; // Your mb_string encoding, default is 'utf-8'. Do not change, if not sure.
     public static $dbprefix = '';

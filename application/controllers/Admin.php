@@ -50,13 +50,22 @@ class Admin extends Routesecure {
       if(in_array($slug,array('review','post','teacher')))
       {
         $xcrud->change_type('image','image','',array('width'=>500,'path'=>'../../assets/images/thumbnail'));
+        $xcrud->label(array('url' => 'Link thông tin thêm'));
       } 
       
       if(in_array($slug,array('curriculum','post'))) 
       {
         $xcrud->before_insert('change_data','insert_support.php');
-        $xcrud->columns('slug, test_time', true);
-        $xcrud->fields('slug, test_time', true);
+        if($slug =='curriculum'){
+          $xcrud->columns('slug, test_time', true);
+          $xcrud->fields('slug, test_time', true);
+          $xcrud->pass_var('test_time', 5);
+        }
+        else{
+          $xcrud->columns('slug', true);
+          $xcrud->fields('slug', true);
+
+        }
       }
       if(in_array($slug,array('schedule','question'))) 
       {
@@ -77,7 +86,8 @@ class Admin extends Routesecure {
         $xcrud->readonly('name,phone,email,course,class_id,answer,register_time');
         $xcrud->relation('curriculum_id','curriculum','id','title');
         $xcrud->relation('class_id','schedule','id','class_name');
-        $xcrud->no_editor('answer');
+        // $xcrud->no_editor('answer');
+        
         
       }
 
@@ -98,7 +108,7 @@ class Admin extends Routesecure {
         $xcrud->before_insert('change_password','insert_support.php');
       }
 
-      $xcrud->label(array('curriculum_id' => 'Khóa học','class_name' => 'Mã lớp','class_id'=>'Mã lớp','short_description'=>'Mô tả ngắn gọn','full_description'=>'Nội dung','done'=>'Xử lý','show_item'=>'Hiển thị trang chủ','description'=>'Nội dung','student_name'=>'Tên học sinh','teacher_name'=>'Tên giáo viên','schedule'=>'Lịch học','start_day'=>'Ngày khai giảng','fee'=>'Học phí','other_benefit'=>'Các lợi ích khác'));
+      $xcrud->label(array('curriculum_id' => 'Khóa học','class_name' => 'Mã lớp','class_id'=>'Mã lớp','short_description'=>'Mô tả ngắn gọn','full_description'=>'Nội dung','done'=>'Xử lý','show_item'=>'Hiển thị trang chủ','description'=>'Nội dung','student_name'=>'Tên học sinh','teacher_name'=>'Tên giáo viên','schedule'=>'Lịch học','start_day'=>'Ngày khai giảng','fee'=>'Học phí','other_benefit'=>'Các lợi ích khác','who_learn'=>'Đối tượng','achievement'=>'Kết quả đạt được','register_time'=>'Thời gian đăng ký'));
       if(in_array($slug,array('question'))) {
         $xcrud->fields('content, answer_size');
         $xcrud->columns('content, answer_size');
