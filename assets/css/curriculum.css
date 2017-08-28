@@ -24,7 +24,7 @@ h2{
   padding-bottom:0px !important;
 }
 
-ol,ul,dl
+.entry-content > ol
 {
   /* IE7: reset rtl list margin. (#7334) */
   list-style: inside;
