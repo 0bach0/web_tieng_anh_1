@@ -98,9 +98,10 @@ function submit_answer(){
     url: 'http://' + window.location.hostname + '/register/submit',
     data: data,
     success: function(succ){
-      location.href= '/';
-      console.log(succ);
       alert('Nộp bài thành công. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất!');
+      location.href= '/';
+      window.onbeforeunload = function (e) {
+      };
     },
     dataType: 'json'
   });
