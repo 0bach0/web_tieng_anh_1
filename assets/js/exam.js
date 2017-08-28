@@ -143,8 +143,3 @@ function show_modal(message){
   // $('#doneModal').modal('show');
 
 }
-
-window.onbeforeunload = function () {
-    submit_answer();
-    return "Bạn có muốn kết thúc luôn không?";
-};
