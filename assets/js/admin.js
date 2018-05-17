@@ -11,4 +11,3 @@ function submit(elm) {
   return xmlHttp.responseText;
 };
 
-// http://fbcrawler.io/admin/update_time/1/90

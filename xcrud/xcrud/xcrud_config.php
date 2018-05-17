@@ -4,8 +4,8 @@ class Xcrud_config
     // default connection
     public static $dbname = 'web_tieng_anh'; // Your database name
     public static $dbuser = 'root'; // Your database username
-    public static $dbpass = 'toor'; // // Your database password
-    public static $dbhost = 'mysql:3306'; // Your database host, 'localhost' is default.
+    public static $dbpass = 'root'; // // Your database password
+    public static $dbhost = 'localhost'; // Your database host, 'localhost' is default.
     
     
     // theme and language

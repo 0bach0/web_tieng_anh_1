@@ -43,14 +43,6 @@
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="col-xs-12 col-sm-6 col-md-12">
-                     <div class="icon-box left media bg-deep p-30 mb-20"><a class="media-left pull-left" href="#"> <i
-                                     class="pe-7s-mail text-theme-colored"></i></a>
-                         <div class="media-body"><strong class="text-uppercase">Email</strong>
-                             <p>tuvan@thuyed.edu.vn</p>
-                         </div>
-                     </div>
-                     </div> -->
                </div>
             </div>
             <div class="col-md-8">

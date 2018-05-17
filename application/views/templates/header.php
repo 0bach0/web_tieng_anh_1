@@ -49,40 +49,7 @@
          <!-- Preloader -->
          <!-- End Preloader -->
          <!-- Header -->
-         <header id="header" class="header">
-            <!-- <div class="header-top bg-theme-color-2 sm-text-center p-0">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-8 col-md-offset-4">
-                        <div class="widget m-0 pull-right sm-pull-none sm-text-center">
-                           <ul class="list-inline pull-right">
-                              <li class="mb-0 pb-0">
-                                 <div class="top-dropdown-outer pt-5 pb-10">
-                                    <a class="top-search-box has-dropdown text-white text-hover-theme-colored"><i class="fa fa-search font-13"></i> &nbsp;</a>
-                                    <ul class="dropdown">
-                                       <li>
-                                          <div class="search-form-wrapper">
-                                             <form method="get" class="mt-10">
-                                                <input type="text" onfocus="if(this.value ==&#39;Enter your search&#39;) { this.value = &#39;&#39;; }" onblur="if(this.value == &#39;&#39;) { this.value =&#39;Enter your search&#39;; }" value="Enter your search" id="searchinput" name="s" class="">
-                                                <label><input type="submit" name="submit" value=""></label>
-                                             </form>
-                                          </div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="widget no-border m-0 mr-15 pull-right flip sm-pull-none sm-text-center">
-                           <ul class="styled-icons icon-circled icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
-                              <li><a href="https://www.facebook.com/IeltsCoThuyEd/" target="_blank"><i class="fa fa-facebook text-white"></i></a></li>
-                              <li><a href="https://www.youtube.com/channel/UCYL8StjAuAfh7uFQ-oYrWjQ" target="_blank"><i class="fa fa-youtube text-white"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
+         <header id="header" class="header">        
             <div class="header-middle p-0 bg-lightest xs-text-center">
                <div class="container pt-0 pb-0">
                   <div class="row">
@@ -178,10 +145,10 @@
 
       <!-- Facebook utility -->
       <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=268585663526955";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=268585663526955&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

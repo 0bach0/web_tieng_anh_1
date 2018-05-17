@@ -8,21 +8,11 @@
                         <p  style="color:white;">15/378 Lê Duẩn, Hà Nội</p>
                         <ul class="list-inline mt-5">
                            <li class="m-0 pl-10 pr-10"><i class="fa fa-phone text-theme-color-2 mr-5"></i> <span class="" style="color:white;">096 886 0488</span></li>
-                           <li class="m-0 pl-10 pr-10"><i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class=""  style="color:white;" href="mailto:%20tuvan@thuyed.edu.vn"  style="color:white !important;">sample@gmail.com</a></li>
-                           <li class="m-0 pl-10 pr-10"><i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="" style="color:white;" href="<?php echo base_url()?>"  style="color:white;">http://google.com.vn</a></li>
+                           <li class="m-0 pl-10 pr-10"><i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class=""  style="color:white;" href="mailto:%20theieltsplus@gmail.com"  style="color:white !important;">theieltsplus@gmail.com</a></li>
+                           <li class="m-0 pl-10 pr-10"><i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="" style="color:white;" href="<?php echo base_url()?>"  style="color:white;">https://ieltsplus.edu.vn/</a></li>
                         </ul>
                      </div>
-                     <!-- <div class="widget dark">
-                        <h4 class="widget-title line-bottom-theme-colored-2">Mở cửa</h4>
-                        <div class="opening-hours">
-                           <ul class="list-border">
-                              <li class="clearfix">
-                                 <span  style="color:white;"> Tất cả các ngày:  </span>
-                                 <div class="value pull-right"  style="color:white;"> 8.00 am - 10.00 pm</div>
-                              </li>
-                           </ul>
-                        </div>
-                     </div> -->
+                     
                   </div>
                   <div class="col-sm-6 col-md-4">
                      <div class="widget dark">
@@ -41,8 +31,7 @@
                   <div class="col-sm-6 col-md-4">
                      <div class="widget dark">
                         <h4 class="widget-title">Facebook</h4>
-                        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/ieltswritingspeakingtheotarget/" data-tabs="timeline" data-width="350" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="height: 70px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1515879038434410&amp;container_width=360&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FIeltsCoThuyEd%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=350">
-                           
+                        <div class="fb-page" data-href="https://www.facebook.com//ieltswritingspeakingtheotarget/" data-tabs="timeline" data-width="350" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                         </div>
                      </div>
                   </div>
@@ -52,7 +41,7 @@
                <div class="container pt-20 pb-20">
                   <div class="row">
                      <div class="col-md-6">
-                        <p class="font-11 m-0" style="color:white;">Copyright ©2016. All Rights Reserved</p>
+                        <p class="font-11 m-0" style="color:white;">Copyright ©2018. All Rights Reserved</p>
                      </div>
                      <div class="col-md-6 text-right">
                         <div class="widget no-border m-0">
