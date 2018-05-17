@@ -63,8 +63,8 @@
                            <ul class="list-inline">
                               <li ><i class="fa fa-envelope-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
                               <li>
-                                 <span class="font-12 text-gray text-uppercase">EMAIl</span>
-                                 <div class="font-13 text-black m-0">abc@gmail.com</div>
+                                 <span class="font-12 text-gray text-uppercase">EMAIL</span>
+                                 <div class="font-13 text-black m-0">theieltsplus@gmail.com</div>
                               </li>
                            </ul>
                         </div>
