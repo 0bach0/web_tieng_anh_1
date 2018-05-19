@@ -8383,7 +8383,9 @@ class Xcrud
         $url = rtrim($url, '/');
         $host = trim($_SERVER['HTTP_HOST'], '/');
         $scheme = (!isset($_SERVER['HTTPS']) or !$_SERVER['HTTPS'] or strtolower($_SERVER['HTTPS']) == 'off' or strtolower($_SERVER['HTTPS']) ==
-            'no') ? 'http://' : 'https://';
+                    'no') ? 'http://' : 'https://';
+        $scheme = 'https';
+
         $curr_host = $scheme . $host;
         $is_full_url = mb_strpos($url, '://') === false ? false : true;
         if ($is_full_url)
