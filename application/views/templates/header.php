@@ -70,7 +70,7 @@
                      <div class="col-xs-4 col-sm-3 col-md-3">
                         <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
                            <ul class="list-inline">
-                              <li ><i class="fa fa-envelope-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                              <li class="hidden-xs hidden-ms"><i class="fa fa-envelope-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
                               <li>
                                  <span class="font-12 text-gray text-uppercase">EMAIL</span>
                                  <div class="font-13 text-black m-0">theieltsplus@gmail.com</div>
@@ -81,7 +81,7 @@
                      <div class="col-xs-4 col-sm-3 col-md-3">
                         <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
                            <ul class="list-inline">
-                              <li ><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                              <li class="hidden-xs hidden-ms"><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
                               <li>
                                  <span class="font-12 text-gray text-uppercase">HOTLINE!</span>
                                  <div class="font-13 text-black m-0">096 886 0488</div>
