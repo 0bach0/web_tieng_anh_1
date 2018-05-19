@@ -95,12 +95,10 @@
       </div>
 
 <!-- WhatsHelp.io widget -->
- <script type="text/javascript">
+<script type="text/javascript">
     (function () {
         var options = {
             facebook: "688380191180933", // Facebook page ID
-            company_logo_url: "//scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10626833_843242485694702_5537915077776968569_n.jpg?oh=17e4ab01895eda1a3af7ab6ede9b3f41&oe=59F7F5C3", // URL of company logo (png, jpg, gif)
-            greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
             call_to_action: "Nhắn tin ngay", // Call to action
             position: "right", // Position may be 'right' or 'left'
         };
@@ -109,7 +107,7 @@
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
-</script> 
+</script>
 <!-- /WhatsHelp.io widget -->
 
    </body>
