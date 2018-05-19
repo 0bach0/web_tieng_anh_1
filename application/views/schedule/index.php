@@ -85,7 +85,7 @@ echo '       </div>';
 echo '    </div>';
 echo '    <div class="col-sm-12">';
 echo '      <div class="form-group">';
-echo '        <input name="form_email" class="form-control" autocomplete='email' type="email" placeholder="Email (*)" required>';
+echo '        <input name="form_email" class="form-control" autocomplete="email" type="email" placeholder="Email (*)" required>';
 echo '       </div>';
 echo '    </div>';
 echo '  </div>';
@@ -93,7 +93,7 @@ echo '  </div>';
 echo '  <div class="row">';
 echo '    <div class="col-sm-12">';
 echo '      <div class="form-group">';
-echo '        <input name="form_phone" class="form-control required" autocomplete='tel' type="text" placeholder="Điện thoại (*)" required>';
+echo '        <input name="form_phone" class="form-control required" autocomplete="tel" type="text" placeholder="Điện thoại (*)" required>';
 echo '       </div>';
 echo '    </div>';
 
