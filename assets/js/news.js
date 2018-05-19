@@ -5,7 +5,7 @@ $(document).ready(function () {
   $("#load-more").bind("click", function(){
     
     $("#load-more").addClass('running');
-    $.get( 'http://'+document.domain+"/news/get_more_news/" + pagenow, function( data ) {
+    $.get( 'https://'+document.domain+"/news/get_more_news/" + pagenow, function( data ) {
       pagenow +=LIMIT;
       data = JSON.parse(data);
 
