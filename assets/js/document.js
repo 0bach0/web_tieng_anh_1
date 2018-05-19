@@ -6,7 +6,7 @@ $(document).ready(function () {
     
     $("#load-more").addClass('running');
 
-    $.get( 'http://'+document.domain+"/document/get_more_document/"+ $("#info").attr("class") +'/'+ pagenow, function( data ) {
+    $.get( 'https://'+document.domain+"/document/get_more_document/"+ $("#info").attr("class") +'/'+ pagenow, function( data ) {
       pagenow +=LIMIT;
       data = JSON.parse(data);
 
