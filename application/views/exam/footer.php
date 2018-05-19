@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="http://placehold.it/1920x1280" style="background-image: url(&quot;http://placehold.it/1920x1280&quot;);">
+
 </footer>
 <!-- End Footer -->
 <!-- Javascript -->
