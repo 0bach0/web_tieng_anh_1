@@ -67,7 +67,7 @@
                            <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="<?php echo base_url()?>"><img src="<?php echo asset_url()?>images/logo-web-tienganh.png" alt="" style="max-height: 45px"></a>
                         </div>
                      </div>
-                     <div class="col-xs-4 col-sm-3 col-md-3">
+                     <div class="col-xs-4 col-sm-3 col-md-3 hidden-xs hidden-sm">
                         <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
                            <ul class="list-inline">
                               <li class="hidden-xs hidden-ms"><i class="fa fa-envelope-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
@@ -78,7 +78,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-xs-4 col-sm-3 col-md-3">
+                     <div class="col-xs-6 col-sm-6 col-md-3">
                         <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
                            <ul class="list-inline">
                               <li class="hidden-xs hidden-ms"><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
@@ -89,7 +89,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-xs-4 col-sm-3 col-md-3">
+                     <div class="col-xs-6 col-sm-6 col-md-3">
                         <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
                            <ul class="list-inline">
                               <li class="hidden-xs hidden-ms"><i class="fa fa-map-marker text-theme-colored font-36 mt-5 sm-display-block"></i></li>
