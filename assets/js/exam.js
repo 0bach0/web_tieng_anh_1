@@ -95,7 +95,7 @@ function submit_answer(){
 
   $.ajax({
     type: "POST",
-    url: 'http://' + window.location.hostname + '/register/submit',
+    url: 'https://' + window.location.hostname + '/register/submit',
     data: data,
     success: function(succ){
       alert('Nộp bài thành công. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất!');
