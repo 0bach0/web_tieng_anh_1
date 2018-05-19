@@ -17,7 +17,7 @@ function to_slug($str) {
 function url(){
   return sprintf(
     "%s://%s",
-    'https'',
+    'https',
     $_SERVER['SERVER_NAME']
   );
 }
